@@ -186,14 +186,11 @@ header>.container {
 /* Main page (main) */
 /* Section 1 (Hero) */
 .hero {
+    padding: 200px 0;
     letter-spacing: 0.06em;
     background-color: var(--footer-hero-color);
     color: var(--secondary-text-color);
     text-align: center;
-}
-
-.section.hero {
-    padding: 200px 0;
 }
 
 .hero h1 {
@@ -225,7 +222,7 @@ header>.container {
 }
 
 /* Section 2 (Features) */
-.section.features {
+.features {
     padding-bottom: 0;
 }
 
