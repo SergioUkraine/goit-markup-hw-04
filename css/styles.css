@@ -25,6 +25,7 @@
     --portfolio-border-color: #EEEEEE;
     --header-border-color: #ECECEC;
     --hero-gradient-color: rgba(47, 48, 58, 0.4);
+    --partners-primary-color: #AFB1B8;
 }
 
 body {
@@ -78,6 +79,18 @@ p {
     white-space: nowrap;
     width: 1px;
 }
+
+.partners h2,
+.team h2,
+.occupation h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--primary-header-color);
+    margin-bottom: 50px;
+}
+
 
 /* Header */
 .header-wrap {
@@ -260,18 +273,24 @@ header>.container {
     color: var(--primary-header-color);
 }
 
+.feature-icon-box {
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: var(--secondary-br-color);
+}
+
+.feature-icon {
+    height: 70px;
+    width: 70px;
+}
+
 /* Section 3 (Occupation) */
 .occupation img {
     display: block;
-}
-
-.occupation h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--primary-header-color);
-    margin-bottom: 50px;
 }
 
 .occupation-list {
@@ -289,16 +308,6 @@ header>.container {
 
 .team {
     background-color: var(--secondary-br-color);
-
-}
-
-.team h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--primary-header-color);
-    margin-bottom: 50px;
 }
 
 .team-list {
@@ -334,6 +343,38 @@ header>.container {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+/* Section 5 (Partners) */
+.partners-list {
+    display: flex;
+}
+
+.partners-list-item {
+    width: 170px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 30px;
+
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--partners-primary-color);
+    border-radius: 4px;
+}
+
+.partners-icon {
+    display: block;
+    height: 60px;
+    width: 106px;
+
+    fill: var(--partners-primary-color);
+}
+
+.partners-list-item:hover .partners-icon {
+    fill: var(--accent-color);
 }
 
 /* Portfolio page (main) */
