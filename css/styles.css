@@ -121,7 +121,7 @@ header>.container {
 }
 
 .contact-bar li:not(:first-child) {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .logo>span {
@@ -149,19 +149,37 @@ header>.container {
     color: var(--primary-header-color);
 }
 
-.contact-bar .link,
+.contact-link,
 .nav-bar .link {
-    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+    fill: var(--primary-text-color);
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
 }
 
 .nav-bar .link:hover,
 .nav-bar .link:focus,
-.contact-bar .link:hover,
-.contact-bar .link:focus,
-.nav-bar .link.current {
+.nav-bar .link.current,
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.envelope-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.phone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 /* Footer */
@@ -352,17 +370,20 @@ header>.container {
 
 .partners-list-item {
     width: 170px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     margin-right: 30px;
-
-    text-align: center;
     border-width: 1px;
     border-style: solid;
     border-color: var(--partners-primary-color);
     border-radius: 4px;
+}
+
+.partners-list-link {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
 }
 
 .partners-icon {
@@ -373,9 +394,11 @@ header>.container {
     fill: var(--partners-primary-color);
 }
 
-.partners-list-item:hover .partners-icon {
+.partners-list-item:hover .partners-icon,
+.partners-list-link:focus .partners-icon {
     fill: var(--accent-color);
 }
+
 
 /* Portfolio page (main) */
 /* Section 1 (Portfolio) */
