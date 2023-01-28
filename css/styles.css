@@ -313,6 +313,7 @@ header>.container {
     padding-bottom: 25px;
     text-align: center;
     margin-bottom: 30px;
+    border-radius: 4px;
     background-color: var(--secondary-br-color);
 }
 
