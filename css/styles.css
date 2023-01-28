@@ -25,7 +25,7 @@
     --portfolio-border-color: #EEEEEE;
     --header-border-color: #ECECEC;
     --hero-gradient-color: rgba(47, 48, 58, 0.4);
-    --partners-primary-color: #AFB1B8;
+    --svg-primary-color: #AFB1B8;
 }
 
 body {
@@ -349,18 +349,55 @@ header>.container {
 }
 
 .team-description h3 {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     color: var(--primary-header-color);
-    margin-bottom: 10px;
 }
 
 .team-description p {
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+/* Social network links */
+
+.social-link-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+
+    border-radius: 50%;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--secondary-text-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-primary-color);
 }
 
 /* Section 5 (Partners) */
@@ -373,7 +410,7 @@ header>.container {
     margin-right: 30px;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--partners-primary-color);
+    border-color: var(--svg-primary-color);
     border-radius: 4px;
 }
 
@@ -391,7 +428,7 @@ header>.container {
     height: 60px;
     width: 106px;
 
-    fill: var(--partners-primary-color);
+    fill: var(--svg-primary-color);
 }
 
 .partners-list-item:hover .partners-icon,
