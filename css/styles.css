@@ -171,15 +171,8 @@ header>.container {
     fill: var(--accent-color);
 }
 
-.envelope-icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-
+.envelope-icon,
 .phone-icon {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
 }
 
@@ -323,11 +316,6 @@ header>.container {
     background-color: var(--secondary-br-color);
 }
 
-.feature-icon {
-    height: 70px;
-    width: 70px;
-}
-
 /* Section 3 (Occupation) */
 .occupation img {
     display: block;
@@ -424,8 +412,6 @@ header>.container {
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
     fill: var(--svg-primary-color);
 }
 
@@ -459,9 +445,6 @@ header>.container {
 
 .partners-icon {
     display: block;
-    height: 60px;
-    width: 106px;
-
     fill: var(--svg-primary-color);
 }
 
@@ -495,18 +478,19 @@ header>.container {
 .filter-button {
     min-width: 73px;
     padding: 6px 20px;
+
+    text-align: center;
     border-color: transparent;
     border-radius: 4px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     background: var(--secondary-br-color);
     color: var(--primary-header-color);
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
     background: var(--accent-color);
     color: var(--secondary-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -530,12 +514,10 @@ header>.container {
 }
 
 .example-description {
-
+    padding: 20px 24px;
     border-left: 1px solid var(--portfolio-border-color);
     border-right: 1px solid var(--portfolio-border-color);
     border-bottom: 1px solid var(--portfolio-border-color);
-
-    padding: 20px 24px;
 }
 
 .example-description h2 {
