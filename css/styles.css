@@ -186,6 +186,7 @@ header>.container {
 
 .footer-wrap .container {
     display: flex;
+    align-items: baseline;
 }
 
 .address-box {
@@ -224,10 +225,6 @@ header>.container {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-text-color);
-}
-
-.social-link-box {
-    padding-top: 12px;
 }
 
 /* Main page (main) */
@@ -309,9 +306,9 @@ header>.container {
 .feature-icon-box {
     width: 270px;
     height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: var(--secondary-br-color);
@@ -387,10 +384,11 @@ header>.container {
 }
 
 .social-link {
-    display: block;
     width: 44px;
     height: 44px;
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
 }
 
@@ -416,19 +414,9 @@ header>.container {
     fill: var(--svg-primary-color);
 }
 
-
-
 /* Section 5 (Partners) */
 .partners-list {
     display: flex;
-}
-
-.partners-list-item {
-    width: 170px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--svg-primary-color);
-    border-radius: 4px;
 }
 
 .partners-list-item:not(:last-child) {
@@ -436,29 +424,31 @@ header>.container {
 }
 
 .partners-list-link {
-    display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    text-align: center;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--svg-primary-color);
+    border-radius: 4px;
 }
 
 .partners-icon {
-    display: block;
     fill: var(--svg-primary-color);
 }
 
-.partners-list-item:hover .partners-icon,
+.partners-list-link:hover .partners-icon,
 .partners-list-link:focus .partners-icon {
     fill: var(--accent-color);
 }
 
-.partners-list-item:hover,
+.partners-list-link:hover,
 .partners-list-link:focus {
     border-color: var(--accent-color);
 }
-
 
 /* Portfolio page (main) */
 /* Section 1 (Portfolio) */
@@ -502,7 +492,12 @@ header>.container {
     flex-wrap: wrap;
 }
 
-.example-item:hover {
+.example-link {
+    display: inherit;
+}
+
+.example-link:hover,
+.example-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
